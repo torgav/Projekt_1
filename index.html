@@ -1,27 +1,133 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./CSS/style.css">
-    <title>Pasta Carbonara - Recept</title>
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+    <link rel="stylesheet" href="CSS/style.css">
+    <title>Pasta Carbonara</title>
 </head>
+
 <body>
-    <nav>
-    </nav>
-    <nav>
-    </nav>
+    <header class="header">
+        <nav class="NAV">
+            <p class="site_tittle">
+                GoodFood
+            </p>
+            <div class="nav_menu">
+                <ul class="nav_list">
+                    <li class="nav_item">
+                        <a href="#hem" class="nav_länk">Hem</a>
+                    </li>
+                    <li class="nav_item">
+                        <a href="#ingridienser" class="nav_länk">Ingridienser</a>
+                    </li>
+                    <li class="nav_item">
+                        <a href="#steg" class="nav_länk">Steg</a>
+                    </li>
+                    <li class="nav_item">
+                        <a href="#liknande" class="nav_länk">Liknade Recept</a>
+                        
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <main class="main">
+        <section class="hem_sektion" id="hem">
+            <div class="TOP-IMG">
+                <img src="/img/top-bild.jpg" alt="pasta">
+            </div>
+            <div class="TOP-BOX">
+                <h1>PASTA<br>CARBONARA</h1>
+                <p class="top">Pasta carbonara eller spaghetti carbonara - älskad favorit 
+                    med grädde och rökt fläsk eller bacon. Passar lika bra till 
+                    släktmiddagen som till fredagsmyset. Enkelt och recept 
+                    på en riktig klassiker. Klar på en kvart! Servera pasta 
+                    carbonara med en äggula.
+                </p>
+                
+                <table class="sum">
+                    <td>Tid:<br>30min</td>
+                    <td>Antal ingridienser:<br>8</td>
+                    <td>Svårighets nivå:<br>
+                        <i class="ri-checkbox-blank-circle-fill"></i>
+                        <i class="ri-checkbox-blank-circle-fill"></i>
+                        <i class="ri-checkbox-blank-circle-line"></i>
+                        <i class="ri-checkbox-blank-circle-line"></i>
+                    </td>
+                </table>
+            </div>
+        </section>
+        <section class="ingr_sektion" id="ingridienser">
+            <ul class="ingridienser">
+                <h2>
+                    Ingredienser:
+                </h2>
+                <li class="ingr" id="pasta">400 g Spaghetti </li>
+                <li class="ingr" id="bacon">160 g Bacon</li>
+                <li class="ingr" id="vitlök">2 finhackade vitlöksklyftor</li>
+                <li class="ingr" id="ägg">4 äggulor</li>
+                <li class="ingr" id="parmesan">85 g Parmesan</li>
+                <li class="ingr" id="olja">4 msk jungfruolivolja</li>
+                <li class="ingr" id="salt_peppar">salt och svartpeppar</li>
+                <li class="ingr" id="persilja">Hackad färsk persilja</li>
 
-    <div class ="main">
-        <header>
-            <h1>PASTA</h1>
-            <h1>CARBONARA</h1>
-        </header>
+            </ul>
+        </section>
+        <section class="steg_sektion" id="steg">
+            <h2>Gör så här: </h2>
+            <div class="BOTTOM-BOX">
+                <span>Koka pastan enligt förpackningens anvisningar, spara 1 1/2 dl av kokvattnet.
+                    <br>
+                    <br>
+                    Värm olivoljan i en stekpanna och stek baconet knaprigt.
+                    <br>
+                    <br>
+                    I slutet tillsätter du vitlöken.
+                    <br>
+                    <br>
+                    Kombinera äggulor och riven ost i en blandningsform och tillsätt sedan 2-3 msk kylt pastavatten.
+                    <br>
+                    <br>
+                    Rör ner ägg- och ostblandningen i den nykokta pastan i stekpannan.
+                    <br>
+                    <br>
+                    För att få en krämig konsistens, späd med pastavatten.
+                    <br>
+                    <br>
+                    Krydda med salt och peppar.
+                    <br>
+                    <br>
+                    Mal noga med svartpeppar tills det liknar kolgranulat.
+                    <br>
+                    <br>
+                    Toppa varje portion med lite extra parmesanost och persilja.
+                </span>
+            </div>
+        </section>
+        <div class="images">
+        <div class="liknande_recept" id="liknande">
+            <h3>Liknande recept:</h3>
+            <a href="https://recept.se/sok?q=pasta+carbonara" target="_blank">
+                <img src="/img/liknade-recept.jpg" alt="liknande">
+            </a>
+        </div>
+        <div class="bottom-img">
+            <img src="/img/pasta-steps.jpg" alt="steps">
+        </div>
     </div>
+    </main>
+    <footer>
+        <div class="socials">
+            <a href="https://www.instagram.com/" target="_blank"><i class="ri-instagram-line"></i></a>
+            <a href="https://www.facebook.com/" target="_blank"><i class="ri-facebook-circle-fill"></i></a>
+            <a href="https://www.youtube.com/" target="_blank"><i class="ri-youtube-fill"></i></a>
+        </div>
+    </footer>
 
-    <div id = "top_pic">
-        <img src="./img/fdbea70f-3b1b-48c7-b223-aba85b6fe754.jpg" alt="">
-    </div>
 </body>
-</html>     
+
+</html>

@@ -1,32 +1,317 @@
-@import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@300&family=Mountains+of+Christmas&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Kaushan+Script&family=Lora&display=swap");
 
-body{
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Lora", serif;
+}
+
+a {
+  text-decoration: none;
+}
+
+section {
+  padding-block: 80px 16px;
+}
+
+nav {
+  position: relative;
+  display: flex;
+  height: 60px;
+
+  align-items: center;
+
+  background: #e7cc98;
+}
+.header {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 100;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  transition: box-shadow 0.3s, background 0.4s;
+}
+
+.site_tittle {
+  display: flex;
+  color: rgb(118, 33, 33);
+  padding-left: 10px;
+  padding-top: 6px;
+  font-family: "Kaushan Script", cursive;
+  font-size: 26px;
+  font-weight: 600;
+
+  transition: color 0.3s;
+}
+.nav_list {
+  display: flex;
+  position: absolute;
+  text-align: center;
+  top: 26px;
+  left: 120px;
+  gap: 8px;
+  list-style: none;
+  font-size: 16px;
+}
+
+.nav_länk {
+  color: #7e5e13;
+  font-weight: 600;
+  transition: color 0, 4s;
+}
+
+.nav_länk:hover {
+  color: #d5a23b;
+}
+
+.hem_sektion {
+  
+  padding-top: 85px;
+  height: 600px;
+  
+}
+
+.TOP-IMG {
+  width: 100%;
+  margin-left: 15px;
+}
+
+.TOP-BOX {
+  position: inherit;
+  width: 405px;
+  height: 310px;
+margin-top: 5px;
+  background: #e7cc98;
+  border-radius: 5px;
+  
+}
+
+h1 {
+  padding-top: 10px;
+  margin-left: 30px;
+  font-size: 30px;
+  font-family: "Kaushan Script", cursive;
+}
+
+.top {
+  margin-left: 30px;
+  font-size: 14.5px;
+  font-family: "Lora", serif;
+}
+
+table {
+  width: 330px;
+  height: 59px;
+  position:initial;
+  background: #d8b87a;
+  border-radius: 5px;
+  margin: 30px;
+  margin-left: 40px;
+  font-size: 15px;
+  font-family: "Kaushan Script", cursive;
+}
+
+.BOTTOM-BOX {
+  box-sizing: border-box;
+  
+
+  width: 100%;
+  height: 100%;
+
+  background: #e7cc98;
+  border: 2px solid #000000;
+  border-radius: 5px;
+  margin-left: 12px;
+  padding: 10px;
+  
+}
+
+
+.ingr_sektion {
+  height: 400px;
+  display: grid;
+  margin-top: 70px;
+  margin-left: 12px;
+ 
+}
+.ingr {
+  background: #e7cc98;
+  margin: 6px;
+  border-radius: 5px;
+  padding-left: 10px;
+  list-style: none;
+}
+
+h2 {
+  padding-left: 16px;
+    
+}
+
+.images {
+  
+  padding-top: 40px;
+  display: flex;
+  column-gap: 20px;
+  margin-left: 20px;
+  
+}
+
+
+footer {
+  text-align: center;
+}
+
+@media only screen and (max-width: 767px) 
+{
+  .bottom-img img{
+    margin-top: -300px;
+    width: 100%;
+    
+  }
+
+}
+
+@media only screen and (min-width: 767px) {
+  main {
     display: grid;
-    grid-template-columns: 50% 50%;
-    grid-template-rows: 0.1fr 10fr 10fr 10fr;
-    margin: 0px;
+  }
+
+
+  .nav{
+    position: sticky;
+    column-gap: 3rem;
+  }
+
+  .nav_list{
+    margin-left: 50px;
+    column-gap: 3rem;
+  }
+  
+  
+.TOP-IMG > img{
+  position: absolute;
+  width: 440px;
+  margin-top: 4px;
+  margin-left: 382px;
+
 }
-nav{
-    background-color: #E7CC98;
-    width:100%;
-    height: 80px;
+  .hem_sektion{
+    margin-top: 30px;
+    margin-bottom: -200px;
+    
+  }
+
+  
+  .ingr_sektion{
+    padding-right: 390px;
+  }
+  .ingridienser{
+    position: relative;
+    
+  }
+
+
+.images{
+  display: grid;
+  position: absolute;
+  gap: 20px;
+  top: 0;
+  right: 0;
+  margin-top: 540px;
+  margin-right: 330px;
+  width: 20px;
+  
+
 }
-.main{
-    height: 800px;
-    width: 1100px;
-    margin-top: 65px;
-    background-color: #E7CC98;
-    margin-inline: auto 0;
-    border-top-left-radius: 10px;
-    border-bottom-left-radius: 10px;
-    justify-items: flex-end;
+  .BOTTOM-BOX{
+    
+    position: relative;
+    width: 50%;
+    height: 430px;
+    white-space: normal;
+  overflow: hidden;
 }
-#top_pic > img{
-    margin-top: 65px;
-    height: 800px;
-    width: 1100px;
-    border-top-right-radius: 10px;
-    border-bottom-right-radius: 10px;
-    margin-inline: auto 0;
-    justify-items: flex-end;
+    
+  }
+  
+  .bottom-img {
+    margin-top: 130px;
+    width: 420px;
+    
+}
+
+.hem_sektion
+  {
+    margin-top: 50px;
+    margin-left: 20px;
+    
+  }
+@media only screen and (min-width: 1008px) {
+
+  main{
+  display: flex;
+  flex-direction: column;
+  }
+
+  .hem_sektion
+  {
+    margin-top: 50px;
+    margin-left: 250px;
+    
+  }
+
+  
+  .TOP-BOX p{
+
+    padding-top: 30px;
+  }
+  .TOP-BOX{
+    height: 423px;
+    padding-top: 40px;
+  }
+
+  .TOP-IMG img{
+    width: 600px;
+  }
+  .liknande_recept{
+    position: relative;
+    right: 200px;
+    margin-top: 130px;
+  }
+  .ingridienser{
+    width: 70%;
+  }
+
+  .ingr_sektion{
+    margin-top: 200px;
+  }
+  .ingr_sektion,
+  .steg_sektion{
+  margin-left: 100px;
+  }
+
+  .BOTTOM-BOX span{
+    font-size: 18px;
+  }
+  .bottom-img{
+    position: relative;
+    right: 200px;
+  }
+
+  
 }
